@@ -26,9 +26,9 @@ class adminController extends Controller
                                             JOIN users u ON a.customerid = u.id WHERE status = 'pending'"));
 
         $rooms = collect(DB::select("SELECT * FROM rooms WHERE status = 'available'"));
-
         
         return view('admin.viewAppointments', ['appointment' => $appointment], ['rooms' => $rooms]);
+
     }
     public function update(Request $request)
     {

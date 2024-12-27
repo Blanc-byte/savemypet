@@ -27,18 +27,17 @@
                 padding: 16px;
                 box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             }
-
-            
             .content {
                 margin-left: 200px;
                 padding: 16px;
                 min-height: 100vh;
                 background-color: #3AAFA9;
-                background-image: url("{{ asset('images/pets.jpg') }}");  
+                /* background-image: url("{{ asset('images/pets.jpg') }}");   */
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
+
         </style>
     </head>
     <body class="font-sans antialiased">

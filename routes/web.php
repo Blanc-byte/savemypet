@@ -21,7 +21,7 @@ Route::middleware(['auth', 'isCustomer'])->group(function () {
     Route::get('/schedule', [customerController::class, 'viewSchedule'])->name('scheduled');
     Route::post('/appointments', [customerController::class, 'store'])->name('appointments.store');
 
-    
+
     Route::post('/update-appointment-Canceled', [customerController::class, 'toCanceled']);
 });
 
@@ -32,15 +32,13 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/viewRooms', [adminController::class, 'viewRooms'])->name('viewRooms');
     Route::get('/viewServices', [adminController::class, 'viewServices'])->name('viewServices');
 
-    
     Route::post('/update-appointment-toDone', [adminController::class, 'toDone']);
     Route::post('/update-appointment-toCanceled', [adminController::class, 'toCanceled']);
-    
+
     Route::delete('/room/{doctor}', [adminController::class, 'destroy'])->name('room.destroy');
     Route::post('/room-doctor', [adminController::class, 'store'])->name('room.add');
     Route::post('/update-room', [adminController::class, 'updateRoom']);
 
-    
     Route::delete('/service/{doctor}', [adminController::class, 'destroyservice'])->name('service.destroy');
     Route::post('/service-doctor', [adminController::class, 'storeservice'])->name('service.add');
     Route::post('/update-service', [adminController::class, 'updateservice']);
