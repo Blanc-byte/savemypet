@@ -1,7 +1,7 @@
 <x-guest-layout>
     <style>
         body {
-            background-color: #193c9c;
+            /* background-color: #193c9c; */
             /* background-image: url("{{ asset('images/hos.webp') }}");   */
             background-size: cover;
             background-position: center;

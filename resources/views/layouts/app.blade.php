@@ -31,7 +31,7 @@
                 margin-left: 200px;
                 padding: 16px;
                 min-height: 100vh;
-                background-color: #3AAFA9;
+                background-color: #a1a1a1;
                 /* background-image: url("{{ asset('images/pets.jpg') }}");   */
                 background-size: cover;
                 background-position: center;
